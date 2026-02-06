@@ -144,7 +144,7 @@ export default function ContactClient() {
       </div>
 
       {/* Desktop Version */}
-      <div className="hidden md:flex flex-col justify-center items-center gap-4 h-full w-full pt-10">
+      <div className="hidden md:flex flex-col justify-center items-center gap-4 h-full w-full">
 
         <form className="flex flex-col w-full max-w-xl mx-auto gap-6" onSubmit={handleSubmit}>
         

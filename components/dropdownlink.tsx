@@ -2,16 +2,36 @@
 
 import { Menu } from '@headlessui/react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import clsx from 'clsx';
 
 export default function DropdownLink() {
+  const pathname = usePathname();
+
+  const isServicesActive =
+    pathname.startsWith('/support') ||
+    pathname.startsWith('/solutions');
+
   return (
     <Menu as="div" className="relative inline-block text-left">
-      <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm text-gray-300 hover:text-white hover:scale-110 transition-all duration-300 ease-out">
+      <Menu.Button
+        className={clsx(
+          "group inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm transition-all duration-300 ease-out",
+          isServicesActive
+            ? "bg-gray-700 text-white scale-105"
+            : "text-gray-300 hover:bg-zinc-400 hover:text-white hover:scale-110"
+        )}
+      >
         Services
         <svg
           viewBox="0 0 20 20"
           fill="currentColor"
-          className="-mr-1 size-5 text-gray-400"
+          className={clsx(
+            "-mr-1 size-5 transition-all duration-300 ease-out",
+            isServicesActive
+              ? "text-white"
+              : "text-gray-400 group-hover:text-gray-200"
+          )}
         >
           <path
             fillRule="evenodd"
@@ -23,14 +43,14 @@ export default function DropdownLink() {
 
       <Menu.Items className="absolute right-0 z-50 mt-2 w-32 origin-top-right rounded-md bg-gray-800 shadow-lg outline-1 outline-white/10 focus:outline-none">
         <div className="py-1">
-            
           <Menu.Item>
             {({ active }) => (
               <Link
                 href="/support"
-                className={`block px-4 py-2 text-sm ${
-                  active ? 'bg-white/5 text-white' : 'text-gray-300'
-                }`}
+                className={clsx(
+                  "block px-4 py-2 text-sm",
+                  active ? "bg-gray-700 text-white" : "text-gray-300"
+                )}
               >
                 IT Support
               </Link>
@@ -41,15 +61,15 @@ export default function DropdownLink() {
             {({ active }) => (
               <Link
                 href="/solutions"
-                className={`block px-4 py-2 text-sm ${
-                  active ? 'bg-white/5 text-white' : 'text-gray-300'
-                }`}
+                className={clsx(
+                  "block px-4 py-2 text-sm",
+                  active ? "? bg-gray-700 text-white" : "text-gray-300"
+                )}
               >
                 IT Solutions
               </Link>
             )}
           </Menu.Item>
-
         </div>
       </Menu.Items>
     </Menu>

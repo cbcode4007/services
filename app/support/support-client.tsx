@@ -58,7 +58,7 @@ export default function SupportClient() {
         {/* Scrollable Content */}
         <div className="flex-1 overflow-y-auto px-6 pb-16 max-h-64 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
           <p className="mt-4 text-base leading-7 text-zinc-400">
-            If there is any problem you're having with your PC, you've come to the right place. Our experts will do whatever it takes to get it working again, at speed, without compromising what isn't broken.
+            If there is any issue you've encountered while using your PC, you've come to the right place. Our experts will do whatever it takes to get it working again, at speed, without compromising what isn't broken. Services under this category include 1 on 1 support calls with remote access via Rustdesk and in-person PC repair. Problem solved, or your money back.
           </p>
         </div>
       </div>
@@ -68,48 +68,49 @@ export default function SupportClient() {
         /* Scrolling Logic Reference for Div */
         ref={contentRef}
 
-        className="hidden md:flex flex-1 w-full max-h-[20vh] flex-col items-center
+        className="hidden md:flex flex-1 w-full max-h-[30vh] overflow-y-auto flex-col items-center
                    scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent
                    px-2 md:scroll-smooth"
       >
-        <p className="mt-6 max-w-md text-lg leading-8 text-zinc-400 pb-8">
-          If there is any problem you've been having with your PC, you've come to the right place. Our experts will do whatever it takes to get it working again, at speed, without compromising what isn't broken.
-        </p>
+        <p className="max-w-md text-lg leading-8 text-zinc-400">
+          If there is any issue you've encountered while using your PC, you've come to the right place. Our experts will do whatever it takes to get it working again, at speed, without compromising what isn't broken. Services under this category include 1 on 1 support calls with remote access via Rustdesk and in-person PC repair. Problem solved, or your money back.
+        </p>        
                       
       </div>
 
       <div className="hidden md:flex flex-row gap-8 px-12">
 
-          <Link href="/contact">
-            <div className="flex flex-row gap-2 transition-all duration-300 ease-out hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]">
-              <Image
-                src="/call_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="Phone Icon"
-                width={32}
-                height={32}
-                className="object-contain"                  
-              />
-              <p className="max-w-md text-m leading-8 text-zinc-50 hover:text-white">
-                Contact Us
-              </p>
-            </div>
-          </Link>
-          <Link href="/download">
-            <div className="flex flex-row gap-2 transition-all duration-300 ease-out hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]">
-              <Image
-                src="/download_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="Download Icon"
-                width={32}
-                height={32}
-                className="object-contain"                  
-              />
-              <p className="max-w-md text-m leading-8 text-zinc-50 hover:text-white">
-                Download Rustdesk
-              </p>
-            </div>
-          </Link>
+        <Link href="/contact">
+          <div className="flex flex-row gap-2 transition-all duration-300 ease-out hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]">
+            <Image
+              src="/call_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Phone Icon"
+              width={32}
+              height={32}
+              className="object-contain"                  
+            />
+            <p className="max-w-md text-m leading-8 text-zinc-50 hover:text-white">
+              Contact Us
+            </p>
+          </div>
+        </Link>
 
-        </div>  
+        <Link href="/download">
+          <div className="flex flex-row gap-2 transition-all duration-300 ease-out hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]">
+            <Image
+              src="/download_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Download Icon"
+              width={32}
+              height={32}
+              className="object-contain"                  
+            />
+            <p className="max-w-md text-m leading-8 text-zinc-50 hover:text-white">
+              Download Rustdesk
+            </p>
+          </div>
+        </Link>
+
+      </div>  
     </>
   );
 }

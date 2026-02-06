@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SolutionsClient() {
   const contentRef = useRef<HTMLDivElement | null>(null);
@@ -57,7 +58,7 @@ export default function SolutionsClient() {
         {/* Scrollable Content */}
         <div className="flex-1 overflow-y-auto px-6 pb-16 max-h-64 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
           <p className="mt-4 text-base leading-7 text-zinc-400">
-            We provide clients a wide range of software solutions across programming languages and frameworks, as well as different type of applications to suit your unique use cases.
+            We provide clients a wide range of software solutions across programming languages and frameworks, as well as different type of applications to suit your unique use cases. Our tech stack includes Python, Flutter, Next.js and SQL, allowing us to create robust desktop, web and mobile apps. See our work so far, and give us a call if we could help you!
           </p>
         </div>
       </div>
@@ -67,14 +68,49 @@ export default function SolutionsClient() {
         /* Scrolling Logic Reference for Div */
         ref={contentRef}
 
-        className="hidden md:flex flex-1 w-full max-h-[20vh] flex-col items-center
+        className="hidden md:flex flex-1 w-full max-h-[30vh] overflow-y-auto flex-col items-center
                    scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent
                    px-2 md:scroll-smooth"
       >
-        <p className="mt-6 max-w-md text-lg leading-8 text-zinc-400 pb-8">
-          We provide clients a wide range of software solutions across programming languages and frameworks, as well as different type of applications to suit your unique use cases.
-        </p>                
+        <p className="max-w-md text-lg leading-8 text-zinc-400">
+          We provide clients a wide range of software solutions across programming languages and frameworks, as well as different type of applications to suit your unique use cases. Our tech stack includes Python, Flutter, Next.js and SQL, allowing us to create robust desktop, web and mobile apps. See our work so far, and give us a call if we could help you!
+        </p>        
+                      
       </div>
+
+      <div className="hidden md:flex flex-row gap-8 px-12">
+
+        <Link href="/contact">
+          <div className="flex flex-row gap-2 transition-all duration-300 ease-out hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]">
+            <Image
+              src="/call_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Phone Icon"
+              width={32}
+              height={32}
+              className="object-contain"                  
+            />
+            <p className="max-w-md text-m leading-8 text-zinc-50 hover:text-white">
+              Contact Us
+            </p>
+          </div>
+        </Link>
+
+        <Link href="/projects">
+          <div className="flex flex-row gap-2 transition-all duration-300 ease-out hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]">
+            <Image
+              src="/rocket_launch_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Projects Icon"
+              width={32}
+              height={32}
+              className="object-contain"                  
+            />
+            <p className="max-w-md text-m leading-8 text-zinc-50 hover:text-white">
+              View Projects
+            </p>
+          </div>
+        </Link>
+
+      </div>  
     </>
   );
 }

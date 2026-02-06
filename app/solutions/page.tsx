@@ -15,7 +15,7 @@ export default function Solutions() {
         {/* Left Content Column (Or Lower Central Content Column for mobile, most of the logic is found in about-client.tsx) */}
         <div className="flex flex-1 flex-col items-center md:items-start md:justify-center">
           {/* Desktop-Only Title */}
-          <div className="hidden md:flex items-center justify-center sticky top-0 z-10 py-4 w-full">
+          <div className="hidden md:flex items-center justify-center sticky top-0 z-10 py-8 w-full">
             <h1 className="text-3xl text-zinc-50">
               IT Solutions
             </h1>

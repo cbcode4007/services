@@ -32,7 +32,7 @@ export default function Header() {
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
             <NavLink href="/">Home</NavLink>
             <NavLink href="/about">About</NavLink>
-            <DropdownLink href="/skills">Services</DropdownLink>
+            <DropdownLink/>
             <NavLink href="/contact">Contact</NavLink>
           </nav>
 
