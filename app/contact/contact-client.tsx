@@ -211,7 +211,7 @@ export default function ContactClient() {
 
           {/* Submit */}
           <div className="flex flex-col gap-2 text-sm w-full pt-6">              
-              <button type="submit" className="self-end flex h-12 w-24 items-center justify-center gap-2 rounded-lg px-5 transition-colors bg-gray-900 hover:bg-zinc-400 active:bg- md:w-39.5 text-sm">Send Message</button>
+              <button type="submit" className="self-end flex h-12 w-24 items-center justify-center gap-2 rounded-lg px-5 transition-colors bg-gray-900 hover:bg-gray-700 active:bg- md:w-39.5 text-sm">Send Message</button>
           </div>
 
         </form>

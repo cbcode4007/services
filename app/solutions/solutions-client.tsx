@@ -95,11 +95,11 @@ export default function SolutionsClient() {
           </div>
         </Link>
 
-        <Link href="/projects">
+        <Link href="/projects" target="_blank">
           <div className="flex flex-row gap-2 transition-all duration-300 ease-out hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]">
             <Image
-              src="/rocket_launch_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
-              alt="Projects Icon"
+              src="/open_in_new_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="New Window Icon"
               width={32}
               height={32}
               className="object-contain"                  

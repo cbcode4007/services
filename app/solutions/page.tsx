@@ -26,14 +26,13 @@ export default function Solutions() {
         </div>
 
         {/* Right Image Column */}
-        <div className="flex flex-1 items-center justify-center md:justify-end">
-          <div className="md:w-lg md:h-128 overflow-hidden glowing-border rounded-2xl">
+        <div className="flex relative flex-1 items-center justify-center pt-12">
+          <div className="md:w-lg md:h-92 overflow-hidden glowing-border rounded-2xl relative">
             <Image
               src="/programming-coding---study-online-banner.png"
               alt="IT Solutions Stock Image"
-              width={512}
-              height={340}
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
             />
           </div>
         </div>
