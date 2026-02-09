@@ -52,7 +52,7 @@ export default function Carousel() {
                 <h2 className="flex flex-col text-2xl font-semibold leading-10 tracking-wide text-zinc-50">
                   IT SUPPORT
                 </h2>
-                <p className="p-4 text-left">Call us, and receive guided remote or full physical hardware examination of your PC!</p>
+                <p className="p-4 text-left">Professional IT support focused on security, stability, and fast, dependable help.</p>
               </div>
             </Link>
           </div>
@@ -84,7 +84,7 @@ export default function Carousel() {
                 <h2 className="flex flex-col text-2xl font-semibold leading-10 tracking-wide text-zinc-50">
                   IT SOLUTIONS
                 </h2>
-                <p className="p-4 text-left">Whether you're an individual or a small business, and no matter what kind of platform you're working with, we'll have a tailored software solution just for you!</p>
+                <p className="p-4 text-left">Custom software solutions purpose-built to solve real problems, efficiently and scalably.</p>
               </div>
 
             </Link>

@@ -47,15 +47,15 @@ export default function AboutClient() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h1 className="text-center mx-auto text-3xl text-zinc-50 pt-2">
+            <h1 className="text-center mx-auto text-3xl text-zinc-50 py-2">
               About Us
             </h1>
           </div>
         </div>
 
         {/* Scrollable Content */}
-        <div className="flex-1 overflow-y-auto pb-16 max-h-64 max-w-lg scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
-          <p className="text-base leading-7 text-zinc-400">
+        <div className="flex-1 overflow-y-auto pb-16 max-h-92 max-w-lg scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
+          <p className="text-lg leading-7 text-zinc-400">
             Welcome to our landing page. Colin Bond IT Consulting is dedicated to addressing your IT needs affordably and with quality, be it through tech support or software development. Starting in 2026 with extensive prior education and experience, CBITC aims to be a friendly alternative to larger IT companies who you can talk to and grow to rely on for PC matters of all kinds.
           </p>
         </div>
