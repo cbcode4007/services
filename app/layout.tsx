@@ -42,7 +42,7 @@ export default function RootLayout({
             src="/KHdh18x.gif"
             alt="background"
             fill
-            className="object-cover absolute inset-0 -z-10 opacity-10"
+            className="unoptimized object-cover absolute inset-0 -z-10 opacity-10"
             unoptimized={true}
           />
           {children}

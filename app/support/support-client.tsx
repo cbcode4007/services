@@ -38,10 +38,10 @@ export default function SupportClient() {
         </h3>
         <ul className="list-disc list-inside space-y-1 text-zinc-400">
           <li>Slow or unresponsive computers</li>
-          <li>Software errors and system crashes</li>
+          <li>Software installation, updates, errors, advice</li>
           <li>Virus and malware removal</li>
-          <li>PC setup, upgrades, and repairs</li>
-          <li>Email, printer, and network issues</li>
+          <li>PC setup, upgrades, repairs</li>
+          <li>Email, printer, network issues</li>
         </ul>
       </div>
 
@@ -51,10 +51,10 @@ export default function SupportClient() {
           How support works
         </h3>
         <ol className="list-decimal list-inside space-y-1 text-zinc-400">
-          <li>You contact us and describe the issue</li>
-          <li>We assess whether remote or in-person support is best</li>
+          <li>You contact us and describe the issue (or show it via RustDesk)</li>
+          <li>We assess what kind of support is needed, how long it will take, how much it would cost</li>
           <li>We fix the problem while you watch</li>
-          <li>You approve everything — no hidden changes</li>
+          <li>You approve everything — no hidden changes or charges</li>
         </ol>
       </div>
 
@@ -65,7 +65,7 @@ export default function SupportClient() {
       </p>
 
       {/* CTAs */}
-      <div className="flex flex-row gap-8 pt-4">
+      <div className="flex flex-row gap-8">
 
         <Link href="/contact">
           <div className="flex items-center gap-2 transition-all duration-300 hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]">

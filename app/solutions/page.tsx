@@ -24,7 +24,7 @@ export default function SolutionsPage() {
 
         {/* Visual */}
         <div className="flex relative flex-1 items-center justify-center pt-12 md:pt-0">
-          <div className="md:w-lg md:h-92 overflow-hidden glowing-border rounded-2xl relative">
+          <div className="md:w-lg md:h-92 overflow-hidden rounded-2xl relative">
             <Image
               src="/programming-coding---study-online-banner.png"
               alt="Programming laptop"

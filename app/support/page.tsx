@@ -24,7 +24,7 @@ export default function SupportPage() {
 
         {/* Visual */}
         <div className="flex relative flex-1 items-center justify-center pt-12 md:pt-0">
-          <div className="md:w-lg md:h-92 overflow-hidden glowing-border rounded-2xl relative">
+          <div className="md:w-lg md:h-92 overflow-hidden rounded-2xl relative">
             <Image
               src="/how-to-start-a-remote-it-support-business.png"
               alt="Remote IT support session"

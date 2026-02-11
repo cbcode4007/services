@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-export default function Carousel() {
+export default function HomeCarousel() {
   return (
     <div className="w-full max-w-5xl mx-auto">
       <Swiper

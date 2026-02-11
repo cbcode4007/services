@@ -44,7 +44,7 @@ const projects: ProjectCard[] = [
     imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
     description:
       "A high quality proof of concept application for IxIxI Creator Lab, helping travelers route to gates based on remaining time.",
-    link: "https://github.com/cbcode4007/airport-travel-app",
+    link: "/projects/airport-travel-app",
     tags: ["flutter", "mobile"],
   },
   {
@@ -53,7 +53,7 @@ const projects: ProjectCard[] = [
     imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
     description:
       "Interface to query a database in English, and obtain formatted results. AI generates SQL and executes it programmatically, while results are handled by the application.",
-    link: "https://github.com/cbcode4007/ai-english-query",
+    link: "/projects/ai-english-query",
     tags: ["python", "sql", "ai", "desktop"],
   },
   {
@@ -62,7 +62,7 @@ const projects: ProjectCard[] = [
     imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
     description:
       "Front-end application with STT, wake word support, and webhook-based automation.",
-    link: "https://github.com/cbcode4007/home-ai-max",
+    link: "/projects/home-ai-max",
     tags: ["flutter", "ai", "mobile"],
   },
   {
@@ -71,7 +71,7 @@ const projects: ProjectCard[] = [
     imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
     description:
       "Standalone application with AI chat and more importantly heavy customization for the agent's personality.",
-    link: "https://github.com/cbcode4007/chat-max",
+    link: "/projects/chat-max",
     tags: ["python", "ai", "desktop"],
   },
   {
@@ -79,53 +79,62 @@ const projects: ProjectCard[] = [
     name: "WEB PORTFOLIO",
     imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
     description:
-      "Modern landing site with sleek visual design, animations and some back-end features, most notably the contact page.",
-    link: "https://github.com/cbcode4007/portfolio",
+      "Modern portfolio showcasing website with sleek design, animations and tight back-end features.",
+    link: "/projects/portfolio",
     tags: ["typescript", "tailwind", "desktop", "mobile"],
   },
   {
     id: 6,
+    name: "WEB SERVICES PAGE",
+    imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
+    description:
+      "Modern landing page with sleek design, animations and tight back-end features.",
+    link: "/projects/services",
+    tags: ["typescript", "tailwind", "desktop", "mobile"],
+  },
+  {
+    id: 7,
     name: "AI OPERATOR",
     imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
     description:
       "AI-driven command router capable of invoking other programs dynamically based on request contents.",
-    link: "https://github.com/cbcode4007/ai-operator",
-    tags: ["python", "ai", "desktop"],
-  },
-  {
-    id: 7,
-    name: "AI WEATHER REPORT",
-    imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
-    description:
-      "Small-scale AI agent with Environment Canada API data to answer weather-related queries, and is compatible for use as a part of AI Operator.",
-    link: "https://github.com/cbcode4007/ai-weather-report",
+    link: "/projects/ai-operator",
     tags: ["python", "ai", "desktop"],
   },
   {
     id: 8,
-    name: "AI NEWS REPORT",
+    name: "AI WEATHER REPORT",
     imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
     description:
-      "Small-scale AI agent with Home Assistant news API data to answer news-related queries, and is compatible for use as a part of AI Operator.",
-    link: "https://github.com/cbcode4007/ai-news-report",
+      "Small-scale AI agent with Environment Canada API data to answer weather-related queries, and is compatible for use as a part of AI Operator.",
+    link: "/projects/ai-weather-report",
     tags: ["python", "ai", "desktop"],
   },
   {
     id: 9,
-    name: "AI HAGPT",
+    name: "AI NEWS REPORT",
     imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
     description:
-      "Small-scale AI agent with Home Assistant integration to chat with the user or interact with smart devices on its network if it believes it was called for, and is compatible for use as a part of AI Operator.",
-    link: "https://github.com/cbcode4007/ai-hagpt",
+      "Small-scale AI agent with Home Assistant news API data to answer news-related queries, and is compatible for use as a part of AI Operator.",
+    link: "/projects/ai-news-report",
     tags: ["python", "ai", "desktop"],
   },
   {
     id: 10,
+    name: "AI HAGPT",
+    imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
+    description:
+      "Small-scale AI agent with Home Assistant integration to chat with the user or interact with smart devices on its network if it believes it was called for, and is compatible for use as a part of AI Operator.",
+    link: "/projects/ai-hagpt",
+    tags: ["python", "ai", "desktop"],
+  },
+  {
+    id: 11,
     name: "AI BACKUP ANALYZER",
     imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
     description:
       "CRON-driven backup analyzer using AI to classify the day's log, and sends necessary alerts via Home Assistant.",
-    link: "https://github.com/cbcode4007/ai-backup-analyzer",
+    link: "/projects/ai-backup-analyzer",
     tags: ["python", "ai", "desktop"],
   },
 ];

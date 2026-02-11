@@ -9,7 +9,7 @@ export default function SolutionsClient() {
 
       {/* Mobile Header */}
       <div className="md:hidden flex flex-col items-center gap-4 pt-28">
-        <div className="w-56 h-56 rounded-full overflow-hidden glowing-border">
+        <div className="w-56 h-56 rounded-full overflow-hidden">
           <Image
             src="/programming-coding---study-online-banner.png"
             alt="IT Solutions"
@@ -59,7 +59,7 @@ export default function SolutionsClient() {
       </p>
 
       {/* CTAs */}
-      <div className="flex flex-row gap-8 pt-4">
+      <div className="flex flex-row gap-8 pt-8">
 
         <Link href="/contact">
           <div className="flex items-center gap-2 transition-all duration-300 hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]">
