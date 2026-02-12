@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function AIEnglishQuery() {
   return (
     <div className="flex h-[calc(100vh-56px)] flex-col items-center px-6">
-      <main className="flex w-full max-w-6xl flex-col gap-8 pt-32">
+      <main className="flex w-full max-w-6xl flex-col gap-4 pt-32">
 
         {/* Title + Description */}
         <section className="max-w-7xl flex flex-col gap-4 px-16 h-38">
