@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <>
       {/* Header Area */}
-      <header className="fixed top-0 z-50 w-full p-8">
+      <header className="fixed top-0 z-50 w-full p-4">
         <div className="mx-auto flex h-14 w-full items-center justify-between select-none">
           {/* Logo */}
           <Link href="/" className="hidden md:flex items-center">
@@ -26,7 +26,12 @@ export default function Header() {
           </Link>
           
           {/* Title */}
-          <h1 className="absolute left-1/2 -translate-x-1/2 text-2xl font-semibold leading-10 tracking-wide text-zinc-50">COLIN BOND IT CONSULTATION</h1>
+          <h1 className="flex absolute left-1/2 -translate-x-1/2 md:text-2xl text-base md:leading-10 leading-tight tracking-wide text-zinc-50 px-2 uppercase">
+            <span className="first-letter:text-xl md:first-letter:text-3xl">Colin</span>&nbsp;
+            <span className="first-letter:text-xl md:first-letter:text-3xl">Bond</span>&nbsp;
+            <span className="text-xl md:text-3xl">IT</span>&nbsp;
+            <span className="first-letter:text-xl md:first-letter:text-3xl">Consultation</span>
+          </h1>          
 
           {/* Desktop Navbar */}
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
@@ -39,13 +44,14 @@ export default function Header() {
           {/* Mobile Hamburger Menu Icon */}
           <button
             onClick={() => setOpen(true)}
-            className="md:hidden flex flex-col gap-1.5"
+            className="md:hidden flex flex-col gap-1.5 pr-2"
             aria-label="Open menu"
           >
             <span className="h-0.5 w-6 bg-white" />
             <span className="h-0.5 w-6 bg-white" />
             <span className="h-0.5 w-6 bg-white" />
-          </button>
+          </button>          
+
         </div>
       </header>
 
@@ -84,12 +90,7 @@ export default function Header() {
             <NavLink href="/about" onClick={() => setOpen(false)}>
               About
             </NavLink>
-            <NavLink href="/skills" onClick={() => setOpen(false)}>
-              Skills
-            </NavLink>
-            <NavLink href="/projects" onClick={() => setOpen(false)}>
-              Projects
-            </NavLink>
+            <DropdownLink/>
             <NavLink href="/contact" onClick={() => setOpen(false)}>
               Contact
             </NavLink>

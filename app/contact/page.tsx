@@ -9,14 +9,25 @@ export const metadata: Metadata = {
 export default function Contact() {
 
   return (
-    <div className="flex h-[calc(100vh-56px)] font-sans">
-      <main className="flex h-full w-full flex-col">
+    <div className="flex min-h-[calc(100vh-56px)] items-center justify-center font-sans">
+      <main className="flex w-full max-w-3xl flex-col items-center gap-8 px-4 pt-12">
 
         {/* Top Details Desktop */}        
-        <div className="hidden w-full md:flex flex-col justify-center items-center gap-6 pt-52">
-          <h1 className="text-3xl leading-10 tracking-tight text-zinc-50 pb-12">
-            Contact Us
-          </h1>
+        <div className="hidden w-full md:flex flex-col justify-center items-center gap-6">
+          
+          {/* Profile Picture */}
+          <div className="flex items-center justify-center">
+            <div className="w-48 h-48 rounded-full overflow-hidden glowing-border">
+              <Image
+                src="/profile.png"
+                alt="Profile"
+                width={256}
+                height={256}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
         </div>
 
         {/* Bottom Form Desktop, Full Width Mobile*/}

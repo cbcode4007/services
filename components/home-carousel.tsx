@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 
 export default function HomeCarousel() {
   return (
-    <div className="w-full max-w-5xl mx-auto">
+    <div className="w-full max-w-3xl mx-auto px-4 md:px-0">
       <Swiper
         modules={[Pagination, Autoplay]}
         spaceBetween={24}
@@ -27,7 +27,7 @@ export default function HomeCarousel() {
         className="mx-auto w-full rounded-xl relative overflow-hidden"
       >
         <SwiperSlide>
-          <div className="group relative h-128 w-full overflow-hidden rounded-xl">
+          <div className="group relative h-92 md:h-128 w-full overflow-hidden rounded-xl">
             <Link href="/support">
               {/* Background image */}
               <Image
@@ -40,15 +40,14 @@ export default function HomeCarousel() {
               {/* Hover overlay */}
               <div className="pointer-events-none absolute inset-0 
                 bg-linear-to-t from-black/80 via-black/40 to-transparent
-                opacity-0 transition-opacity duration-300
-                group-hover:opacity-100"
+                opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300"
               />
 
               {/* Hover text */}
               <div className="absolute inset-0 flex flex-col items-start justify-end p-6
-                opacity-0 pb-8 transition-all duration-300
-                translate-y-4 group-hover:translate-y-0
-                group-hover:opacity-100">
+                opacity-100 pb-4 md:pb-8 md:opacity-0 md:transition-all md:duration-300
+                md:translate-y-4 md:group-hover:translate-y-0
+                md:group-hover:opacity-100">
                 <h2 className="flex flex-col text-2xl font-semibold leading-10 tracking-wide text-zinc-50">
                   IT SUPPORT
                 </h2>
@@ -59,7 +58,7 @@ export default function HomeCarousel() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="group relative h-128 w-full overflow-hidden rounded-xl">
+          <div className="group relative h-92 md:h-128 w-full overflow-hidden rounded-xl">
             <Link href="/solutions">
               {/* Background image */}
               <Image
@@ -72,15 +71,14 @@ export default function HomeCarousel() {
               {/* Hover overlay */}
               <div className="pointer-events-none absolute inset-0 
                 bg-linear-to-t from-black/80 via-black/40 to-transparent
-                opacity-0 transition-opacity duration-300
-                group-hover:opacity-100"
+                opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300"
               />
 
               {/* Hover text */}
               <div className="absolute inset-0 flex flex-col items-start justify-end p-6
-                opacity-0 pb-8 transition-all duration-300
-                translate-y-4 group-hover:translate-y-0
-                group-hover:opacity-100">
+                opacity-100 pb-4 md:pb-8 md:opacity-0 md:transition-all md:duration-300
+                md:translate-y-4 md:group-hover:translate-y-0
+                md:group-hover:opacity-100">
                 <h2 className="flex flex-col text-2xl font-semibold leading-10 tracking-wide text-zinc-50">
                   IT SOLUTIONS
                 </h2>

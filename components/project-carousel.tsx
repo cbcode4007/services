@@ -35,7 +35,7 @@ export default function ProjectCarousel({
       >
         {media.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="relative aspect-video w-full overflow-hidden rounded-xl bg-black h-132">
+            <div className="relative w-full overflow-hidden rounded-xl bg-black h-48 md:h-132">
 
               {item.type === "image" && (
                 <Image

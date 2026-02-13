@@ -28,12 +28,8 @@ export default function ContactClient() {
   return (
     <>
       {/* Mobile Version */}
-      <div className="md:hidden flex flex-col min-h-screen w-full overflow-y-auto pb-32">
-        {/* Title */}
-        <div className="flex justify-center pt-11 pb-4">
-          <h1 className="text-2xl font-semibold text-zinc-50">Contact Me</h1>
-        </div>
-
+      <div className="md:hidden flex flex-col min-h-[calc(100vh-56px)] items-center justify-center font-sans pb-24">
+      
         {/* Profile Picture */}
         <div className="flex items-center justify-center">
           <div className="w-32 h-32 rounded-full overflow-hidden glowing-border">
@@ -48,7 +44,7 @@ export default function ContactClient() {
         </div>
 
         {/* Contact Information */}
-        <div className="flex flex-col items-center gap-3 px-4 pt-4 pb-6"/>
+        <div className="flex flex-col items-center gap-3 px-4 pt-8 pb-6"/>
 
         {/* Form - Bottom Half */}
         <form className="flex flex-col gap-3 px-6 max-w-full" onSubmit={handleSubmit} ref={formRef}>
