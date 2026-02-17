@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <>
       {/* Header Area */}
-      <header className="fixed top-0 z-50 w-full p-4">
+      <header className="fixed top-0 z-50 w-full p-8">
         <div className="mx-auto flex h-14 w-full items-center justify-between select-none">
           {/* Logo */}
           <Link href="/" className="hidden md:flex items-center">
