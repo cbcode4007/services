@@ -5,11 +5,11 @@ import Link from "next/link";
 
 export default function SolutionsClient() {
   return (
-    <div className="flex flex-col min-h-[calc(100vh-56px)] items-center justify-center font-sans">
+    <div className="flex flex-col min-h-[calc(100vh-56px)] md:min-h-auto items-center md:items-start font-sans">
 
       {/* Mobile Header */}
-      <div className="md:hidden flex flex-col items-center gap-4">
-        <div className="w-32 h-32 rounded-full overflow-hidden">
+      <div className="flex flex-col items-center gap-4">
+        <div className="md:hidden w-32 h-32 rounded-full overflow-hidden">
           <Image
             src="/programming-coding---study-online-banner.png"
             alt="IT Solutions"
@@ -23,7 +23,7 @@ export default function SolutionsClient() {
         </h1>
       </div>
 
-      <div className="h-64 w-sm flex flex-col gap-8 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
+      <div className="h-64 w-sm flex flex-col gap-8 p-4 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
         {/* Intro */}
         <p className="text-base md:text-lg leading-7 md:leading-8 text-zinc-400">
           We design and build custom software solutions that solve real problems — from automating internal workflows to delivering polished customer-facing applications.

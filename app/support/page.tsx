@@ -12,8 +12,8 @@ export default function SupportPage() {
       <main className="flex flex-col md:flex-row w-full max-w-6xl mx-auto px-6 md:px-0 gap-12">
 
         {/* Content */}
-        <div className="flex flex-1 flex-col items-center md:items-start md:justify-center">
-          <div className="hidden md:flex w-full py-8">
+        <div className="flex flex-1 flex-col items-center md:justify-center">
+          <div className="hidden md:hidden w-full py-8">
             <h1 className="text-3xl text-zinc-50">
               IT Support
             </h1>
