@@ -19,6 +19,7 @@ export default function ContactClient() {
         throw new Error(`Invalid response: ${response.status}`);
       }
       alert('Message sent successfully. Thank you! Expect a response within a business day.');
+      formRef.current?.reset();
     } catch (err) {
       console.error(err);
       alert("Message failed to send. Please try again later.");
@@ -44,7 +45,7 @@ export default function ContactClient() {
         </div>
 
         {/* Contact Information */}
-        <div className="flex flex-col items-center gap-3 px-4 pt-8 pb-6"/>
+        <div className="flex flex-col items-center gap-3 px-4 pb-6"/>
 
         {/* Form - Bottom Half */}
         <form className="flex flex-col gap-3 px-6 max-w-full" onSubmit={handleSubmit} ref={formRef}>
@@ -140,9 +141,9 @@ export default function ContactClient() {
       </div>
 
       {/* Desktop Version */}
-      <div className="hidden md:flex flex-col justify-center items-center gap-4 h-full w-full">
+      <div className="hidden md:flex flex-col gap-4 h-full w-full pt-8">
 
-        <form className="flex flex-col w-full max-w-xl mx-auto gap-6" onSubmit={handleSubmit}>
+        <form className="flex flex-col w-2xl mx-auto gap-6" onSubmit={handleSubmit}>
         
           {/* Names */}
           <div className="flex w-full gap-4">
