@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <>
       {/* Header Area */}
-      <header className="fixed top-0 z-50 w-full p-8">
+      <header className="fixed top-0 z-50 w-full pl-8 pr-3 py-8 md:pr-8">
         <div className="mx-auto flex h-14 w-full items-center justify-between select-none">
           {/* Logo */}
           <Link href="/" className="hidden md:flex items-center">
@@ -25,12 +25,17 @@ export default function Header() {
             />
           </Link>
           
-          {/* Title */}
-          <h1 className="flex absolute left-1/2 -translate-x-1/2 md:text-2xl text-base md:leading-10 leading-tight tracking-wide text-zinc-50 px-2 uppercase">
+          {/* Desktop Title */}
+          <h1 className="hidden md:flex absolute left-1/2 -translate-x-1/2 md:text-2xl text-base md:leading-10 leading-tight tracking-wide text-zinc-50 px-2 uppercase">
             <span className="first-letter:text-xl md:first-letter:text-3xl">Colin</span>&nbsp;
             <span className="first-letter:text-xl md:first-letter:text-3xl">Bond</span>&nbsp;
             <span className="text-xl md:text-3xl">IT</span>&nbsp;
             <span className="first-letter:text-xl md:first-letter:text-3xl">Consultation</span>
+          </h1>
+
+          {/* Mobile Title */}
+          <h1 className="flex md:hidden absolute left-1/2 -translate-x-1/2 text-base leading-tight tracking-wide text-zinc-50 px-2 uppercase">
+            <span className="text-2xl">CBITC</span>&nbsp;
           </h1>          
 
           {/* Desktop Navbar */}
@@ -44,7 +49,7 @@ export default function Header() {
           {/* Mobile Hamburger Menu Icon */}
           <button
             onClick={() => setOpen(true)}
-            className="md:hidden flex flex-col gap-1.5 pr-2"
+            className="md:hidden flex flex-col gap-1.5"
             aria-label="Open menu"
           >
             <span className="h-0.5 w-6 bg-white" />

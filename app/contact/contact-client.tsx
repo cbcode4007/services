@@ -29,7 +29,7 @@ export default function ContactClient() {
   return (
     <>
       {/* Mobile Version */}
-      <div className="md:hidden flex flex-col min-h-[calc(100vh-56px)] items-center justify-center font-sans pb-24">
+      <div className="md:hidden flex flex-col min-h-[calc(100vh-56px)] items-center justify-center font-sans pb-32">
       
         {/* Profile Picture */}
         <div className="flex items-center justify-center">

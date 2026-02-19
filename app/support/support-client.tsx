@@ -8,7 +8,7 @@ export default function SupportClient() {
     <div className="flex flex-col min-h-[calc(100vh-56px)] md:min-h-auto items-center md:items-start font-sans">
 
       {/* Mobile Header */}
-      <div className="flex flex-col items-center gap-4">
+      <div className="flex flex-col items-center gap-4 pt-32">
         <div className="md:hidden w-32 h-32 rounded-full overflow-hidden">
           <Image
             src="/how-to-start-a-remote-it-support-business.png"
