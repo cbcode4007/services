@@ -41,7 +41,7 @@ const projects: ProjectCard[] = [
   {
     id: 1,
     name: "IXIXI'S AIRPORT APP",
-    imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
+    imagePath: "/airport-travel-app-thumb.jpg",
     description:
       "A high quality proof of concept application for IxIxI Creator Lab, helping travelers route to gates based on remaining time.",
     link: "/projects/airport-travel-app",
@@ -50,7 +50,7 @@ const projects: ProjectCard[] = [
   {
     id: 2,
     name: "AI ENGLISH QUERY",
-    imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
+    imagePath: "/ai-english-query-thumb.jpg",
     description:
       "Interface to query a database in English, and obtain formatted results. AI generates SQL and executes it programmatically, while results are handled by the application.",
     link: "/projects/ai-english-query",
@@ -59,7 +59,7 @@ const projects: ProjectCard[] = [
   {
     id: 3,
     name: "HOME AI MAX",
-    imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
+    imagePath: "/home-ai-max-thumb.jpg",
     description:
       "Front-end application with STT, wake word support, and webhook-based automation.",
     link: "/projects/home-ai-max",
@@ -68,7 +68,7 @@ const projects: ProjectCard[] = [
   {
     id: 4,
     name: "CHAT MAX",
-    imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
+    imagePath: "/chat-max-thumb.jpg",
     description:
       "Standalone application with AI chat and more importantly heavy customization for the agent's personality.",
     link: "/projects/chat-max",
@@ -76,8 +76,8 @@ const projects: ProjectCard[] = [
   },
   {
     id: 5,
-    name: "WEB PORTFOLIO",
-    imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
+    name: "CB WEB PORTFOLIO",
+    imagePath: "/web-portfolio-thumb.png",
     description:
       "Modern portfolio showcasing website with sleek design, animations and tight back-end features.",
     link: "/projects/portfolio",
@@ -85,8 +85,8 @@ const projects: ProjectCard[] = [
   },
   {
     id: 6,
-    name: "WEB SERVICES PAGE",
-    imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
+    name: "OUR SERVICES PAGE",
+    imagePath: "/web-services-thumb.png",
     description:
       "Modern landing page with sleek design, animations and tight back-end features.",
     link: "/projects/services",
@@ -95,7 +95,7 @@ const projects: ProjectCard[] = [
   {
     id: 7,
     name: "AI OPERATOR",
-    imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
+    imagePath: "/ai-operator-thumb.png",
     description:
       "AI-driven command router capable of invoking other programs dynamically based on request contents.",
     link: "/projects/ai-operator",
@@ -104,7 +104,7 @@ const projects: ProjectCard[] = [
   {
     id: 8,
     name: "AI WEATHER REPORT",
-    imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
+    imagePath: "/ai-weather-report-thumb.png",
     description:
       "Small-scale AI agent with Environment Canada API data to answer weather-related queries, and is compatible for use as a part of AI Operator.",
     link: "/projects/ai-weather-report",
@@ -113,7 +113,7 @@ const projects: ProjectCard[] = [
   {
     id: 9,
     name: "AI NEWS REPORT",
-    imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
+    imagePath: "/ai-news-report-thumb.png",
     description:
       "Small-scale AI agent with Home Assistant news API data to answer news-related queries, and is compatible for use as a part of AI Operator.",
     link: "/projects/ai-news-report",
@@ -122,7 +122,7 @@ const projects: ProjectCard[] = [
   {
     id: 10,
     name: "AI HAGPT",
-    imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
+    imagePath: "/ai-hagpt-thumb.png",
     description:
       "Small-scale AI agent with Home Assistant integration to chat with the user or interact with smart devices on its network if it believes it was called for, and is compatible for use as a part of AI Operator.",
     link: "/projects/ai-hagpt",
@@ -131,7 +131,7 @@ const projects: ProjectCard[] = [
   {
     id: 11,
     name: "AI BACKUP ANALYZER",
-    imagePath: "/Computer-screen-code-glitch-animation-gif-background-free.gif",
+    imagePath: "/ai-backup-analyzer-thumb.png",
     description:
       "CRON-driven backup analyzer using AI to classify the day's log, and sends necessary alerts via Home Assistant.",
     link: "/projects/ai-backup-analyzer",
@@ -219,8 +219,7 @@ export default function Projects() {
                   <Image
                     src={project.imagePath}
                     alt={project.name}
-                    fill
-                    sizes="128px"
+                    fill                    
                     className="object-cover"
                     loading="eager"
                   />

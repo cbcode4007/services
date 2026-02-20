@@ -35,14 +35,14 @@ export default function ProjectCarousel({
       >
         {media.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="relative w-full overflow-hidden rounded-xl bg-black h-48 md:h-132">
+            <div className="relative w-full overflow-hidden rounded-xl bg-black h-64 md:h-128">
 
               {item.type === "image" && (
                 <Image
                   src={item.src}
                   alt={item.alt ?? "Project screenshot"}
                   fill
-                  className="object-cover"
+                  className="object-scale-down"
                 />
               )}
 
