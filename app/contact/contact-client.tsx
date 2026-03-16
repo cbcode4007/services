@@ -33,7 +33,7 @@ export default function ContactClient() {
       
         {/* Profile Picture */}
         <div className="flex items-center justify-center">
-          <div className="w-32 h-32 rounded-full overflow-hidden glowing-border">
+          <div className="w-32 h-32 rounded-full overflow-hidden glowing-border pt-12">
             <Image
               src="/profile.png"
               alt="Profile"
@@ -141,7 +141,7 @@ export default function ContactClient() {
       </div>
 
       {/* Desktop Version */}
-      <div className="hidden md:flex flex-col gap-4 h-full w-full pt-8">
+      <div className="hidden md:flex flex-col gap-4 h-full w-full pt-4">
 
         <form className="flex flex-col w-2xl mx-auto gap-6" onSubmit={handleSubmit}>
         

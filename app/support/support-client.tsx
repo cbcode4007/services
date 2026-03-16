@@ -1,30 +1,41 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function SupportClient() {
-  return (
-    <div className="flex flex-col min-h-[calc(100vh-56px)] md:min-h-auto items-center md:items-start font-sans">
+  const contentRef = useRef<HTMLDivElement | null>(null);
 
-      {/* Mobile Header */}
-      <div className="flex flex-col items-center gap-4 pt-32">
-        <div className="md:hidden w-32 h-32 rounded-full overflow-hidden">
-          <Image
-            src="/how-to-start-a-remote-it-support-business.png"
-            alt="IT Support"
-            width={256}
-            height={256}
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <h1 className="text-center mx-auto text-3xl text-zinc-50 pb-8">
-          IT Support
-        </h1>
-      </div>
+  /* Desktop Scroll Logic (Overflowing Left Content Column can be scrolled from anywhere the cursor is) */
+  useEffect(() => {
+    // Get passed div to route all scrolling to or bail
+    const el = contentRef.current;    
+    if (!el) return;
 
+    // Decide if scrolling should happen based on overflow (if the total height exceeds the visible height to the client)
+    function shouldForward() {
+      return el!.scrollHeight > el!.clientHeight;
+    }
 
-      <div className="h-64 w-sm flex flex-col gap-8 p-4 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
+    // Scroll by mouse wheel delta
+    function onWheel(e: WheelEvent) {
+      if (!shouldForward()) return;
+      e.preventDefault();
+      el!.scrollBy({ top: e.deltaY });
+    }
+
+    window.addEventListener("wheel", onWheel, { passive: false });
+
+    return () => {
+      window.removeEventListener("wheel", onWheel);
+    };
+  }, []);
+
+  function InfoContent() {
+    return (
+      <>
+        
         {/* Intro */}
         <p className="text-base md:text-lg leading-7 md:leading-8 text-zinc-400">
           We provide reliable, no-nonsense IT support for home users and small
@@ -35,7 +46,7 @@ export default function SupportClient() {
 
         {/* Services */}
         <div>
-          <h3 className="text-zinc-50 font-semibold mb-2">
+          <h3 className="text-zinc-50 font-semibold mb-2 md:pt-6">
             What we help with
           </h3>
           <ul className="list-disc list-inside space-y-1 text-zinc-400">
@@ -49,7 +60,7 @@ export default function SupportClient() {
 
         {/* How it works */}
         <div>
-          <h3 className="text-zinc-50 font-semibold mb-2">
+          <h3 className="text-zinc-50 font-semibold mb-2 md:pt-6">
             How support works
           </h3>
           <ol className="list-decimal list-inside space-y-1 text-zinc-400">
@@ -61,13 +72,13 @@ export default function SupportClient() {
         </div>
 
         {/* Trust */}
-        <p className="text-sm text-zinc-500 leading-relaxed">
+        <p className="text-sm text-zinc-500 leading-relaxed md:pt-6">
           Remote sessions are conducted using RustDesk. You control access at
           all times, and connections can be ended instantly.
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-row gap-8">
+        <div className="flex flex-row gap-8 md:pt-6">
 
           <Link href="/contact">
             <div className="flex items-center gap-2 transition-all duration-300 hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]">
@@ -94,7 +105,44 @@ export default function SupportClient() {
           </Link>
 
         </div>
+
+      </>
+    );
+  }
+
+  return (
+    <>
+      {/* Mobile */}
+      <div className="flex flex-col min-h-screen pt-28 md:hidden">
+
+        {/* Top Picture and Title */}
+        <div className="sticky top-28 z-10 bg-black px-6 pb-7">
+          <div className="flex flex-col items-center gap-4">
+            <div className="w-32 h-32 rounded-full overflow-hidden glowing-border">
+              <Image
+                src="/programming-coding---study-online-banner.png"
+                alt="IT Solutions"
+                width={256}
+                height={256}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h2 className="text-2xl font-semibold tracking-wide text-zinc-50">About Me</h2>
+          </div>
+        </div>
+
+        <div className="flex-1 overflow-y-auto px-6 pb-16 max-h-64 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
+          <InfoContent />
+        </div>
       </div>
-    </div>
+
+      {/* Desktop */}
+      <div
+        ref={contentRef}
+        className="hidden md:flex flex-1 w-full max-h-92 flex-col items-start overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent p-6 md:scroll-smooth"
+      >
+        <InfoContent />
+      </div>
+    </>
   );
 }
