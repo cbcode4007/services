@@ -22,7 +22,7 @@ export default function NavLink({ href, children, onClick }: NavLinkProps) {
       className={`px-3 py-2 rounded-md text-m font-medium ${
         isActive
           ? 'bg-gray-700 text-white'
-          : 'text-gray-300 hover:bg-zinc-400 hover:text-white hover:scale-110 transition-all duration-300 ease-out'
+          : 'text-gray-300 hover:bg-zinc-400 hover:text-white transition-all duration-300 ease-out'
       }`}
     >
       {children}

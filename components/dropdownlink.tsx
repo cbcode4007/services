@@ -19,7 +19,7 @@ export default function DropdownLink() {
           "group inline-flex w-full justify-start md:justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm transition-all duration-300 ease-out",
           isServicesActive
             ? "bg-gray-700 text-white scale-105"
-            : "text-gray-300 hover:bg-zinc-400 hover:text-white hover:scale-110"
+            : "text-gray-300 hover:bg-zinc-400 hover:text-white"
         )}
       >
         Services

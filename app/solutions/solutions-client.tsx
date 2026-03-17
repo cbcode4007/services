@@ -121,7 +121,7 @@ export default function SolutionsClient() {
       {/* Desktop */}
       <div
         ref={contentRef}
-        className="hidden md:flex flex-1 w-full max-h-92 flex-col items-start overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent p-6 md:scroll-smooth"
+        className="hidden md:flex flex-1 w-full max-h-92 flex-col items-start overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent px-6 md:scroll-smooth"
       >
         <InfoContent />
       </div>

@@ -36,10 +36,6 @@ export default function AirportTravelApp() {
           src: "/airport-travel-app-4.png",
           alt: "Flight overview screen",
         },        
-        {
-          type: "video",
-          src: "/projects/airport-app/demo.mp4",
-        },
       ]}
     />
   );

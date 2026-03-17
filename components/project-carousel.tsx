@@ -19,7 +19,7 @@ export default function ProjectCarousel({
   media,
 }: ProjectCarouselProps) {
   return (
-    <div className="w-full max-w-5xl mx-auto">
+    <div className="w-full max-w-5xl mx-auto max-h-112">
       <Swiper
         modules={[Pagination, Autoplay]}
         spaceBetween={24}
@@ -35,7 +35,7 @@ export default function ProjectCarousel({
       >
         {media.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="relative w-full overflow-hidden rounded-xl bg-black h-64 md:h-128">
+            <div className="relative w-full overflow-hidden rounded-xl bg-black h-64 md:h-112">
 
               {item.type === "image" && (
                 <Image
