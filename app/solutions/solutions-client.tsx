@@ -59,7 +59,7 @@ export default function SolutionsClient() {
           </ul>
         </div>
 
-        <p className="text-base md:text-lg leading-7 md:leading-8 text-zinc-400 md:pt-6">
+        <p className="text-base md:text-lg leading-7 md:leading-8 text-zinc-400 md:pt-6 md:pb-8">
           Whether you’re improving an existing process or building something new from the ground up, we focus on clarity, reliability, and long-term maintainability.
         </p>
 

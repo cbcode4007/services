@@ -13,19 +13,9 @@ export default function AINewsReport() {
       media={[
         {
           type: "image",
-          src: "/projects/airport-app/screen-1.png",
-          alt: "Flight overview screen",
+          src: "/news-1.png",
+          alt: "News question and answer example",
         },
-        {
-          type: "image",
-          src: "/projects/airport-app/screen-2.png",
-          alt: "Gate navigation view",
-        },
-        {
-          type: "video",
-          src: "/projects/airport-app/demo.mp4",
-        },
-      ]}
-    />
+      ]} tech={"Python, ChatGPT API, Global News API"} outcomes={"Integrated into the AI Operator framework for when it is asked about news."}    />
   );
 }

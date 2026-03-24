@@ -13,19 +13,24 @@ export default function AIWeatherReport() {
       media={[
         {
           type: "image",
-          src: "/projects/airport-app/screen-1.png",
-          alt: "Flight overview screen",
+          src: "/weather-1.png",
+          alt: "Weather question and answer example 1",
         },
         {
           type: "image",
-          src: "/projects/airport-app/screen-2.png",
-          alt: "Gate navigation view",
+          src: "/weather-2.png",
+          alt: "Weather question and answer example 2",
         },
         {
-          type: "video",
-          src: "/projects/airport-app/demo.mp4",
+          type: "image",
+          src: "/weather-3.png",
+          alt: "Weather question and answer example 3",
         },
-      ]}
-    />
+        {
+          type: "image",
+          src: "/weather-4.png",
+          alt: "Environment Canada data",
+        },
+      ]} tech={"Python, ChatGPT API, Environment Canada API"} outcomes={"Integrated into the AI Operator framework for when it is asked about weather."}    />
   );
 }

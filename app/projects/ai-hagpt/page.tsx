@@ -13,19 +13,9 @@ export default function AIHAGPT() {
       media={[
         {
           type: "image",
-          src: "/projects/airport-app/screen-1.png",
-          alt: "Flight overview screen",
+          src: "/hagpt-1.png",
+          alt: "Home assistant question and answer example 1",
         },
-        {
-          type: "image",
-          src: "/projects/airport-app/screen-2.png",
-          alt: "Gate navigation view",
-        },
-        {
-          type: "video",
-          src: "/projects/airport-app/demo.mp4",
-        },
-      ]}
-    />
+      ]} tech={"Python, ChatGPT API, Home Assistant"} outcomes={"Integrated into the AI Operator framework for when it is given any apparent home automation command (plain English)."}    />
   );
 }

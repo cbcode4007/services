@@ -124,7 +124,7 @@ const projects: ProjectCard[] = [
     name: "AI HAGPT",
     imagePath: "/ai-hagpt-thumb.png",
     description:
-      "Small-scale AI agent with Home Assistant integration to chat with the user or interact with smart devices on its network if it believes it was called for, and is compatible for use as a part of AI Operator.",
+      "Small-scale AI agent with Home Assistant integration to chat with the user or interact with smart devices on its network, and is compatible for use as a part of AI Operator.",
     link: "/projects/ai-hagpt",
     tags: ["python", "ai", "desktop"],
   },
@@ -154,7 +154,7 @@ export default function Projects() {
     <div className="flex flex-col gap-4 px-4 md:px-0">
 
       {/* Tag Interface */}
-      <div className="flex flex-wrap gap-3 justify-center pb-8">
+      <div className="flex flex-wrap gap-3 justify-center pb-4">
         {(Object.keys(TAG_ICONS) as Tag[]).map((tag) => {
           const active = activeTags.includes(tag);
           return (
@@ -186,7 +186,7 @@ export default function Projects() {
       </div>
 
       {/* Desktop Grid */}
-      <div className="hidden md:grid grid-cols-3 gap-8 w-full h-152 overflow-y-auto px-2 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent md:scroll-smooth">
+      <div className="hidden md:grid grid-cols-3 gap-8 w-full h-158 overflow-y-auto px-2 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent md:scroll-smooth py-6">
         {filteredProjects.length === 0 ? (
           <p className="text-zinc-400 col-span-3 text-center">
             No projects match the selected tags.

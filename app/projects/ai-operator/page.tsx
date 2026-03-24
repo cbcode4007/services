@@ -13,19 +13,24 @@ export default function AIOperator() {
       media={[
         {
           type: "image",
-          src: "/projects/airport-app/screen-1.png",
-          alt: "Flight overview screen",
+          src: "/ai-operator-1.png",
+          alt: "No plugin chat response",
         },
         {
           type: "image",
-          src: "/projects/airport-app/screen-2.png",
-          alt: "Gate navigation view",
+          src: "/ai-operator-2.png",
+          alt: "Weather plugin",
         },
         {
-          type: "video",
-          src: "/projects/airport-app/demo.mp4",
+          type: "image",
+          src: "/ai-operator-3.png",
+          alt: "News plugin",
         },
-      ]}
-    />
+        {
+          type: "image",
+          src: "/ai-operator-4.png",
+          alt: "HAGPT plugin",
+        },
+      ]} tech={"Python, ChatGPT API"} outcomes={"Being added to Home AI Max for scalability. More features can be implemented with this agent, as it provides a simple way of adding new agents or plugins and managing their interactions."}    />
   );
 }

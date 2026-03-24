@@ -13,19 +13,19 @@ export default function AIEnglishQuery() {
       media={[
         {
           type: "image",
-          src: "/projects/airport-app/screen-1.png",
-          alt: "Flight overview screen",
+          src: "/ai-english-query-1.png",
+          alt: "Login screen",
         },
         {
           type: "image",
-          src: "/projects/airport-app/screen-2.png",
-          alt: "Gate navigation view",
+          src: "/ai-english-query-2.png",
+          alt: "Main screen empty",
         },
         {
-          type: "video",
-          src: "/projects/airport-app/demo.mp4",
+          type: "image",
+          src: "/ai-english-query-3.png",
+          alt: "Main screen populated",
         },
-      ]}
-    />
+      ]} tech={"Python, MariaDB, ChatGPT API"} outcomes={"Routinely used by the development team in its endeavours for rapid, vocal queries. Actively maintained and ready for production."}    />
   );
 }

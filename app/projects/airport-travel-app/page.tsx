@@ -35,8 +35,10 @@ export default function AirportTravelApp() {
           type: "image",
           src: "/airport-travel-app-4.png",
           alt: "Flight overview screen",
-        },        
+        },                
       ]}
+      tech="Flutter, Dart, Firebase, AviationStack Flight API"
+      outcomes="Considered both the best out of all 'Airport Travel App' student project submissions by the client, and for usage. Praised mainly because of its seamless adherence and adaptation to shifting requirements, integrating all planned features with modern UI into a cohesive experience."
     />
   );
 }

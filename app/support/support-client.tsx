@@ -63,7 +63,7 @@ export default function SupportClient() {
           <h3 className="text-zinc-50 font-semibold mb-2 md:pt-6">
             How support works
           </h3>
-          <ol className="list-decimal list-inside space-y-1 text-zinc-400">
+          <ol className="list-decimal list-inside space-y-1 text-zinc-400 md:pb-8">
             <li>You contact us and describe the issue (or show it via RustDesk)</li>
             <li>We assess what kind of support is needed, how long it will take, how much it would cost</li>
             <li>We fix the problem while you watch</li>
