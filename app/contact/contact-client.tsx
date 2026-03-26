@@ -33,7 +33,7 @@ export default function ContactClient() {
       
         {/* Profile Picture */}
         <div className="flex items-center justify-center">
-          <div className="w-32 h-32 rounded-full overflow-hidden glowing-border pt-12">
+          <div className="w-32 h-32 rounded-full overflow-hidden glowing-border">
             <Image
               src="/profile.png"
               alt="Profile"

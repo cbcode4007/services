@@ -33,11 +33,10 @@ export default function AboutClient() {
 
   return (
     <>
-      <div className="flex flex-col min-h-[calc(100vh-56px)] items-center justify-center font-sans pt-32 md:pt-12">
-      
+      <div className="flex flex-col min-h-[calc(100vh-56px)] items-center justify-center font-sans pt-28 md:pt-12">
 
         {/* Top Picture and Title */}
-        <div className="flex pb-8">
+        <div className="flex pb-6">
           <div className="flex flex-col gap-4 md:gap-8">
             <div className="w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden glowing-border">
               <Image

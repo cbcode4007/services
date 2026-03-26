@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function RustDesk() {
   return (
     <div className="flex min-h-screen font-sans">
-      <main className="flex flex-col w-full mx-auto gap-8">
+      <main className="flex flex-col w-auto mx-auto gap-8">
           {/* Calls client-side function wrapper which also contains the bio text box for direct manipulation */}
           <DownloadClient />
       </main>

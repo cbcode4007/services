@@ -30,8 +30,8 @@ export default function ProjectTemplate({
       </section>
 
       {/* Scrollable Content Area */}
-      <div className="flex-1 overflow-y-auto max-h-[calc(100vh-78px-16rem)] scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
-        <main className="flex flex-col items-center w-full max-w-6xl mx-auto gap-12">          
+      <div className="flex-1 overflow-y-auto max-h-72 md:max-h-[calc(100vh-78px-16rem)] scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
+        <main className="flex flex-col items-center w-auto md:w-full max-w-6xl mx-auto gap-12">          
 
           {/* Media Showcase */}
           {media && media.length > 0 && (
@@ -41,26 +41,26 @@ export default function ProjectTemplate({
           )}
 
           {/* Description */}
-          <section className="flex flex-col items-center justify-center space-y-6">
+          <section className="flex flex-col items-center justify-center space-y-6 md:px-0 px-12">
             <p className="text-lg text-zinc-400 max-w-5xl leading-relaxed text-center">
               {description}
             </p>
           </section>
 
           {/* Structured Columns */}
-          <section className="w-5xl flex flex-col md:flex-row gap-64 items-start justify-center">
-            <div className="flex-1 flex flex-col items-center">
+          <section className="w-full max-w-5xl flex flex-col md:flex-row gap-8 md:gap-24 items-start justify-center px-12 md:px-0">
+            <div className="flex-1 flex flex-col md:items-center items-start">
               <h2 className="text-2xl mb-4">Technologies</h2>
-              <p className="text-zinc-400 leading-relaxed">
-                {tech}                
-              </p>
+              <div className="text-zinc-400 leading-relaxed">
+                {tech}
+              </div>
             </div>
 
-            <div className="flex-1 flex flex-col items-center">
+            <div className="flex-1 flex flex-col md:items-center items-start">
               <h2 className="text-2xl mb-4">Outcomes</h2>
-              <p className="text-zinc-400 leading-relaxed">
-                {outcomes}                              
-              </p>
+              <div className="text-zinc-400 leading-relaxed">
+                {outcomes}
+              </div>
             </div>
           </section>
 

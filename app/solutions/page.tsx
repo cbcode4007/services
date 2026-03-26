@@ -13,7 +13,7 @@ export default function Solutions() {
       <main className="flex flex-col md:flex-row w-full max-w-6xl mx-auto px-6 md:px-16 gap-8 md:gap-20 md:items-center md:justify-center">
 
         {/* Left Content Column (Or Lower Central Content Column for mobile, most of the logic is found in about-client.tsx) */}
-        <div className="flex flex-col min-w-lg h-lg items-center md:items-start md:justify-center">
+        <div className="flex flex-col md:h-lg items-center md:items-start md:justify-center">
           {/* Desktop-Only Title */}
           <div className="hidden md:flex items-start justify-start sticky top-0 z-10 md:py-8 py-4 w-full">
             <h1 className="text-3xl text-zinc-50">

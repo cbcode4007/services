@@ -35,7 +35,7 @@ export default function DownloadClient() {
     <>
       <div className="flex flex-col h-[calc(100vh-56px)]">
         {/* Fixed Title Section */}
-        <section className="shrink-0 flex flex-col items-center justify-center pt-24">
+        <section className="shrink-0 flex flex-col items-center justify-center pt-24 md:pb-4">
           <div className="flex py-6">
             <div className="flex flex-col gap-4 items-center">
               <div className="w-32 h-32 rounded-full overflow-hidden">
@@ -52,7 +52,7 @@ export default function DownloadClient() {
         </section>
   
         {/* Scrollable Content Area */}
-        <div className="flex-1 overflow-y-auto max-h-[calc(100vh-56px-16rem)] scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
+        <div className="flex overflow-y-auto max-h-64 md:max-w-lg max-w-92 md:max-h-[calc(100vh-56px-148px-16rem)] scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
           <main className="flex flex-col items-center w-full max-w-6xl mx-auto gap-18 pb-16">
   
             {/* Description */}
@@ -89,7 +89,7 @@ export default function DownloadClient() {
                 </div>  
                 <div className="flex flex-row">
                     <h3 className="font-semibold">4.</h3> 
-                    <p className="text-base text-zinc-400 px-2">
+                    <p className="text-base text-zinc-400 px-2 pb-2 md:pb-0">
                         Share your ID and one-time password. RustDesk will display a temporary access code. Provide this to us so we can connect and assist you.
                     </p>    
                 </div>                    

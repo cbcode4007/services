@@ -39,7 +39,7 @@ export default function SolutionsClient() {
           We design and build custom software solutions that solve real problems — from automating internal workflows to delivering polished customer-facing applications.
         </p>
 
-        <div className="md:pt-6">
+        <div className="pt-6">
           <h3 className="text-zinc-50 font-semibold mb-2">Our tech stack</h3>
           <ul className="list-disc list-inside space-y-1 text-zinc-400">
             <li>Python</li>
@@ -50,7 +50,7 @@ export default function SolutionsClient() {
           </ul>
         </div>
 
-        <div className="md:pt-6">
+        <div className="pt-6">
           <h3 className="text-zinc-50 font-semibold mb-2">Our platforms</h3>
           <ul className="list-disc list-inside space-y-1 text-zinc-400">
             <li>Desktop</li>
@@ -59,7 +59,7 @@ export default function SolutionsClient() {
           </ul>
         </div>
 
-        <p className="text-base md:text-lg leading-7 md:leading-8 text-zinc-400 md:pt-6 md:pb-8">
+        <p className="text-base md:text-lg leading-7 md:leading-8 text-zinc-400 pt-8 pb-8">
           Whether you’re improving an existing process or building something new from the ground up, we focus on clarity, reliability, and long-term maintainability.
         </p>
 
@@ -98,9 +98,9 @@ export default function SolutionsClient() {
       <div className="flex flex-col min-h-screen pt-28 md:hidden">
 
         {/* Top Picture and Title */}
-        <div className="sticky top-28 z-10 bg-black px-6 pb-7">
+        <div className="sticky top-28 z-10 px-6 pb-7">
           <div className="flex flex-col items-center gap-4">
-            <div className="w-32 h-32 rounded-full overflow-hidden glowing-border">
+            <div className="w-32 h-32 rounded-full overflow-hidden">
               <Image
                 src="/programming-coding---study-online-banner.png"
                 alt="IT Solutions"
@@ -109,11 +109,10 @@ export default function SolutionsClient() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h2 className="text-2xl font-semibold tracking-wide text-zinc-50">About Me</h2>
           </div>
         </div>
 
-        <div className="flex-1 overflow-y-auto px-6 pb-16 max-h-64 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
+        <div className="flex-1 overflow-y-auto px-6 max-h-64 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
           <InfoContent />
         </div>
       </div>

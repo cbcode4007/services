@@ -46,7 +46,7 @@ export default function SupportClient() {
 
         {/* Services */}
         <div>
-          <h3 className="text-zinc-50 font-semibold mb-2 md:pt-6">
+          <h3 className="text-zinc-50 font-semibold mb-2 pt-8">
             What we help with
           </h3>
           <ul className="list-disc list-inside space-y-1 text-zinc-400">
@@ -60,10 +60,10 @@ export default function SupportClient() {
 
         {/* How it works */}
         <div>
-          <h3 className="text-zinc-50 font-semibold mb-2 md:pt-6">
+          <h3 className="text-zinc-50 font-semibold mb-2 pt-6">
             How support works
           </h3>
-          <ol className="list-decimal list-inside space-y-1 text-zinc-400 md:pb-8">
+          <ol className="list-decimal list-inside space-y-1 text-zinc-400 pb-8">
             <li>You contact us and describe the issue (or show it via RustDesk)</li>
             <li>We assess what kind of support is needed, how long it will take, how much it would cost</li>
             <li>We fix the problem while you watch</li>
@@ -72,13 +72,13 @@ export default function SupportClient() {
         </div>
 
         {/* Trust */}
-        <p className="text-sm text-zinc-500 leading-relaxed md:pt-6">
+        <p className="text-sm text-zinc-500 leading-relaxed pt-8">
           Remote sessions are conducted using RustDesk. You control access at
           all times, and connections can be ended instantly.
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-row gap-8 md:pt-6">
+        <div className="flex flex-row gap-8 pt-6">
 
           <Link href="/contact">
             <div className="flex items-center gap-2 transition-all duration-300 hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]">
@@ -116,22 +116,21 @@ export default function SupportClient() {
       <div className="flex flex-col min-h-screen pt-28 md:hidden">
 
         {/* Top Picture and Title */}
-        <div className="sticky top-28 z-10 bg-black px-6 pb-7">
+        <div className="sticky top-28 z-10 px-6 pb-7">
           <div className="flex flex-col items-center gap-4">
-            <div className="w-32 h-32 rounded-full overflow-hidden glowing-border">
+            <div className="w-32 h-32 rounded-full overflow-hidden">
               <Image
-                src="/programming-coding---study-online-banner.png"
-                alt="IT Solutions"
+                src="/how-to-start-a-remote-it-support-business.png"
+                alt="IT Support"
                 width={256}
                 height={256}
                 className="w-full h-full object-cover"
               />
-            </div>
-            <h2 className="text-2xl font-semibold tracking-wide text-zinc-50">About Me</h2>
+            </div>            
           </div>
         </div>
 
-        <div className="flex-1 overflow-y-auto px-6 pb-16 max-h-64 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
+        <div className="flex-1 overflow-y-auto px-6 max-h-64 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
           <InfoContent />
         </div>
       </div>

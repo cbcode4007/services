@@ -243,10 +243,10 @@ export default function Projects() {
         )}
       </div>
 
-      {/* Mobile Scrollable Column */}
+      {/* Mobile Scrollable Row */}
       <div className="space-y-8"></div>
 
-      <div className="flex flex-col md:hidden gap-4 w-full max-h-64 overflow-y-auto pb-8 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
+      <div className="flex flex-col md:hidden gap-4 w-full max-h-64 overflow-y-auto md:pb-8 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
         {filteredProjects.length === 0 ? (
           <p className="text-zinc-400 text-center">
             No projects match the selected tags.
