@@ -33,7 +33,7 @@ export default function AboutClient() {
 
   return (
     <>
-      <div className="flex flex-col min-h-[calc(100vh-56px)] items-center justify-center font-sans pt-28 md:pt-12">
+      <div className="flex flex-col min-h-[calc(100vh-56px)] items-center justify-center font-sans pt-8 md:pt-12">
 
         {/* Top Picture and Title */}
         <div className="flex pb-6">
@@ -54,7 +54,7 @@ export default function AboutClient() {
         </div>
 
         {/* Scrollable Content */}
-        <div className="flex-1 overflow-y-auto px-2 max-h-92 w-sm md:w-lg scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
+        <div className="flex-1 overflow-y-auto px-2 max-h-64 w-64 md:w-lg scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
           <p className="text-base md:text-lg leading-7 md:leading-8 text-zinc-400">
             Colin Bond IT Consulting is dedicated to meeting your IT needs with reliable, high-quality service at an affordable cost—whether through hands-on technical support or custom software development. Founded in 2026 and backed by extensive education and practical experience, CBITC was created to offer a friendly, approachable alternative to larger IT firms: a partner you can speak with directly, trust over time, and rely on for all your computing needs.
           </p>

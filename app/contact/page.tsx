@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 export default function Contact() {
 
   return (
-    <div className="flex min-h-[calc(100vh-56px)] items-center justify-center font-sans">
-      <main className="flex w-full max-w-3xl flex-col items-center gap-8 px-4 pt-25">
+    <div className="flex min-h-[calc(100vh-56px)] items-center justify-center font-sans pt-25 md:pt-12">
+      <main className="flex w-auto md:w-full max-w-3xl flex-col items-center gap-8 px-4">
 
         {/* Top Details Desktop */}        
         <div className="hidden w-full md:flex flex-col justify-center items-center gap-6">

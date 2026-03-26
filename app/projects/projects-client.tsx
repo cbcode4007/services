@@ -243,59 +243,63 @@ export default function Projects() {
         )}
       </div>
 
-      {/* Mobile Scrollable Row */}
-      <div className="space-y-8"></div>
-
-      <div className="flex flex-col md:hidden gap-4 w-full max-h-64 overflow-y-auto md:pb-8 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
+      {/* Mobile Project List */}
+      <div className="md:hidden px-4 space-y-6 max-h-72 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
         {filteredProjects.length === 0 ? (
           <p className="text-zinc-400 text-center">
             No projects match the selected tags.
           </p>
         ) : (
           filteredProjects.map((project) => (
-            <Link target="_blank" href={`${project.link}`} key={project.id}>
-              <div className="group relative bg-zinc-900 rounded-lg h-64 flex flex-col transition-all duration-300">
-                {/* Project Image */}
-                <div className="relative w-full overflow-hidden rounded-t-lg h-1/2">
+            <Link
+              key={project.id}
+              href={project.link}
+              target="_blank"
+              className="group block"
+            >
+              <article className="bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 transition-all duration-300 active:scale-[0.99] h-32">
+                
+                {/* Image with overlay */}
+                <div className="relative w-full h-full overflow-hidden">
+                  
                   {/* Tag Icons */}
                   <div className="absolute top-3 right-3 z-20 flex gap-2">
                     {project.tags.map((tag) => (
                       <div
                         key={`${project.id}-${tag}`}
-                        className="w-9 h-9 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center ring-1 ring-white/20 shadow-lg"
+                        className="w-8 h-8 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center ring-1 ring-white/20"
                       >
                         <Image
                           src={TAG_ICONS[tag]}
                           alt={tag}
-                          width={18}
-                          height={18}
+                          width={16}
+                          height={16}
                           className="object-contain invert"
                         />
                       </div>
                     ))}
                   </div>
+
                   <Image
                     src={project.imagePath}
                     alt={project.name}
                     fill
-                    sizes="128px"
-                    className="object-cover"
-                    loading="eager"
+                    sizes="100vw"
+                    className="object-cover transition-transform duration-500 group-active:scale-105"
+                    priority
                   />
-                </div>
 
-                <div className="h-1 bg-zinc-800 transition-all duration-300" />
+                  {/* Dark gradient overlay */}
+                  <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent"></div>
 
-                {/* Content */}
-                <div className="flex flex-col p-4 h-1/2 overflow-y-auto">
-                  <h2 className="text-lg font-semibold text-zinc-50 mb-2">
-                    {project.name}
-                  </h2>
-                  <p className="text-xs text-zinc-300 leading-relaxed">
-                    {project.description}
-                  </p>
+                  {/* Content overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 p-5 space-y-3">
+                    <h2 className="text-lg font-semibold text-white">
+                      {project.name}
+                    </h2>
+                  </div>
                 </div>
-              </div>
+              </article>
             </Link>
           ))
         )}
